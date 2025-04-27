@@ -45,5 +45,9 @@ y = ((-w0 / w1) \* x) + (-w2 / w1)
 
 # Output:
 
+Image:
+![alt text](image.png)
+
+Video:
 <video src="neuralNetwork.mov" width="320" height="240" controls>
 </video>
