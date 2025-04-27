@@ -49,5 +49,4 @@ Image:
 ![alt text](image.png)
 
 Video:
-<video src="neuralNetwork.mov" width="320" height="240" controls>
-</video>
+Refer neuralNetwork.mp4
