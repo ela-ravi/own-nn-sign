@@ -55,7 +55,7 @@ class NeuralNetwork {
     // Hidden -> Output
     const outputMatrix = Matrix.multiplyM(this.weights_ho, hiddenMatrix); // This creates feed forward dense layer
 
-    // outputMatrix.print("OutputMatrix");
+    outputMatrix.print("OutputMatrix");
 
     outputMatrix.add(this.weights_bias_ho); // Add bias
     outputMatrix.map(this.sigmoid); // Activation function
@@ -65,14 +65,14 @@ class NeuralNetwork {
     // Output Error
     const targetMatrix = Matrix.fromArray(target_array);
 
-    // targetMatrix.print("targetMatrix");
+    targetMatrix.print("targetMatrix");
 
     const outputs_error = Matrix.subtract(targetMatrix, outputMatrix);
 
     let outputGradientMatrix = Matrix.map(outputMatrix, this.dSigmoid);
 
-    // outputGradientMatrix.print("outputGradientMatrix (DS)");
-    // outputs_error.print("outputs_error");
+    outputGradientMatrix.print("outputGradientMatrix (DS)");
+    outputs_error.print("outputs_error");
 
     outputGradientMatrix.multiplyE(outputs_error);
 
