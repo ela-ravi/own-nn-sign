@@ -111,7 +111,7 @@ class Matrix {
           this.data[i][j] += newData[i][j];
         }
       }
-    } else if (typeof Number(value) === "number") {
+    } else if (typeof value === "number") {
       // Scalar addition
       for (let i = 0; i < this.rows; i++) {
         for (let j = 0; j < this.columns; j++) {
